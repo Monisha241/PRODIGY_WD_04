@@ -1,0 +1,196 @@
+<DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Contact</title>
+        <style>
+            body
+            {
+                background:  linear-gradient(to bottom, #caeb0e 0%, #79f36e 100%);
+            }
+            .contact
+           {
+              margin-top: 2rem;
+           }
+           .contact h2 
+           {
+               text-align: center;
+               margin: bottom 1rem;;
+               font-size: xx-large;
+           }
+           .contact-form-container
+            {
+                max-width: 40.75rem;
+                margin: 0 auto;
+                padding: 0.938rem;
+                border-radius: 5px;
+                box-shadow:0 3px 10px rgba(0, 0, 0, 0.1);
+                background-color: aliceblue;
+            }
+            .contact-form-container label
+             {
+               line-height: 2.7em;
+               font-weight: bold;
+               color: #333; 
+             }
+             .contact-form-container .input-field
+              {
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                border: none;
+                border: 2px outset #10e021;
+                font-size: 0.875rem;
+                outline: none;
+               }
+
+               .input-field::placeholder
+                {
+                  padding: 0.5rem;
+                  color:#250abe;
+                }
+
+
+                .submit-btn 
+                {
+                   width: 100%;
+                   padding: 10px;
+                   margin: 10px 0;
+                   background-color: #fdf905;
+                   border: 2px solid  #ff0000;;
+                   border-radius: 5px;
+                   font-size: 1rem;
+                   font-weight: bold;
+                   transition:  all 0.3s ease;
+                }
+
+                .submit-btn:hover
+                 {
+                    background-color: #f805af;
+                    border: 2px solid #250abe;
+                    cursor: pointer;
+                  }
+
+                  .socials 
+                  {
+                     display: flex;
+                     flex-direction:row;
+                     position: fixed;
+                     justify-content: center;
+                     align-items: center;
+                     left:60px;
+                     right: 60px;
+                    bottom: 50px;
+                  }
+ 
+                  .socicon
+                   {
+                       width: 8rem;
+                       height: 8rem;
+                  }
+                  .home
+                   {
+                      border-color: purple;
+                      border-width: 6px;
+                      color: black;
+                      font-size: 20px;
+                      padding: 20px 50px;
+                      border-radius: 12px;
+                      transition-duration: 0.4s;
+  
+                    }
+
+                  .home:hover
+                  {
+                      background-color:#f8077f;
+                      color: aliceblue;  
+                  }
+
+        </style>
+    </head>
+    <body>
+        <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+              <div class="contact-form">
+                <form action="" method="POST" id="myForm">
+                  <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="sender-name"
+                      placeholder="Enter Your Name"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="sender-email"
+                      placeholder="Enter Your Email"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      cols="60"
+                      rows="10"
+                      placeholder="Enter Your Message"
+                      name="message"
+                      class="input-field"
+                      required
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                  />
+                </form>
+                <div id="success-message" style="display: none; color: red; font-size: 40px; background-color: #10e021;">
+                  <p>Thank you for your message!</p>
+              </div>
+              </div>
+            </div>
+          </section>
+          <div class="socials">
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank" 
+              ><img
+                src="img/insta.gif"
+                alt="Instagram"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="http://www.linkedin.com/in/monisha-d24" target="_blank"
+              ><img
+                src="img/link.gif"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://github.com/Monisha241" target="_blank"
+              ><img src="img/git.gif" alt="Github" class="socicon"
+            /></a>
+          </div>
+          <form action="home.html">
+            <button  type="submit"  value="home" class="home" >HOME</button>
+          </form>
+          <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.getElementById('success-message').style.display = 'block';
+                document.getElementById('myForm').reset();
+                
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Portfolio</title>
+        <style>
+            html 
+              {
+                scroll-behavior: smooth
+              }
+
+
+            * 
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            ul 
+            {
+               list-style-type: none;
+            }
+
+            a
+            {
+                text-decoration: none;
+                color: var(--primary-color);
+            }
+
+            a:hover
+           {
+              color: var(--secondary-color);
+           }
+
+           body
+          {
+            font-family: var(--font-family);
+            background-color: var(--bg-color); 
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+          }
+           nav
+            {
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem 3.5rem;
+                background-color: blue;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            nav h1
+           {
+                color: black;
+            }
+
+            nav a {
+                color: var(--primary-color);
+                transition: var(--transition);
+              }
+            nav a:hover {
+                  color: var(--secondary-color);
+                 border-bottom: 2px solid var(--secondary-color);
+              }
+
+            nav ul {
+               display: flex;
+                gap: 1.9rem;
+              }     
+
+            nav ul li {
+                  font-weight: var(--bold-font);
+                  font-size: 30px;
+                }
+
+                nav ul li :hover
+                {
+                  background-color:#f8077f;
+                }
+            .burger-menu {
+                   color: var(--primary-color);
+                   font-size: 2rem;
+                   border: 0;
+                   background-color: transparent;
+                   cursor: pointer;
+                   display: none;
+               }
+.hero {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 100rem;
+  max-height: 80rem;
+  margin: auto;
+ 
+}
+.hero img {
+  height: 700px;
+  width: 700px;
+}
+
+.bio {
+  font-size: x-large;
+  width: 80rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: 1.8;
+  padding: 0.3rem 0;
+}
+
+.more_about_me
+{
+  border-color: purple;
+  border-width: 6px;
+  color: black;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  
+}
+
+.more_about_me:hover
+{
+  background-color:#f8077f;
+   color: aliceblue;  
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1>Monisha.D</h1>
+            <ul class="navigation">
+              <li><a href="home.html" class="nav_link">Home</a></li>
+              <li><a href="about.html" class="nav-link" target="_blank">About</a></li>
+              <li><a href="skills.html" class="nav-link" target="_blank">Skills</a></li>
+              <li><a href="project.html" class="nav-link" target="_blank">Projects</a></li>
+              <li><a href="contact.html" class="nav-link" target="_blank">Contact</a></li>
+            </ul>
+            
+      </nav>
+      <h1 style="text-align: center;">WELCOME TO MY PORTFOLIO</h1>
+      <section class="hero" id="about">
+        <img align="right" 
+          src="img/img1.jpg"
+          alt="Monisha.D"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title" style="color:red">Monisha.D</h2><br><br><br>
+          <h5>UNDER GRADUATE STUDENT</h5><br>
+          <p class="bio-text">
+            Hi There<br>
+            I am <b>Monisha</b><br>
+            a passionate "Crafting digital experiences
+            that blend creativity and functionality to
+            leave a lasting impression – Monisha,
+             Web Developer from Bangalore, India."
+          </p>
+          <form action="about.html" target="_blank">
+          <button  type="submit"  value="more_about_me" class="more_about_me" >More About Me</button>
+        </form>
+        </div>
+  </section>
+    </body>
+</html>

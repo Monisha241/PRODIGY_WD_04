@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>About Me</title>
+        <style>
+            body
+            {
+                background:  linear-gradient(to bottom, #c1f30e 0%, #5f0a35 100%);
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh; 
+                margin: 0; 
+                flex-direction: column;
+            }
+            .container
+            {
+                display:flex;
+                border: 8px outset red;
+                background-color: lightblue;    
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width:600px;
+                height: 600px;
+                border-radius: 300px;
+                font-size: 22px;
+            }
+            .home
+            {
+                border-color: purple;
+                border-width: 6px;
+                color: black;
+                font-size: 20px;
+                padding: 20px 50px;
+                border-radius: 12px;
+                transition-duration: 0.4s;
+  
+            }
+
+            .home:hover
+            {
+                 background-color:#f8077f;
+                 color: aliceblue;  
+            }
+        </style>
+    </head>
+    <body>
+        <p style="text-align: center; color: #5f0a35; font-size: 50px;">More About Me</p>
+        <div class="container">
+            <p>Hello! I'm Monisha,<br>
+                 a passionate and driven BCA student with a keen interest<br>
+                 in software development and technology.<br> 
+                 I am currently pursuing my degree in<br>
+                Computer Applications from New horizon college.<br>
+                 Throughout my academic journey,<br>
+                  I have developed a strong foundation in programming languages,<br> 
+                  software engineering principles, and database management.</p>
+        </div>
+        <form action="home.html" >
+            <button  type="submit"  value="home" class="home" >HOME</button>
+        </form>
+    </body>
+</html>

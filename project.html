@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Project</title>
+        <style>
+            body
+            {
+                background:  linear-gradient(to bottom, #0ebde9 0%, #800606 100%);
+            }
+            .projects
+             {
+                 
+                 padding: 32px 0;
+                 margin-top: 2rem;
+             }
+
+            .project-pic 
+            {
+                width: 65%;
+                height: 60%;
+            }
+
+            .projects-container
+             {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             }
+
+             .projects-title
+              {
+                    text-align: center;
+                     margin-bottom: 1rem;
+              }
+
+              .project-container 
+              {
+                    text-align: center;
+                    width: 21.875rem;
+                    padding: 1rem;
+              }
+
+              .project-container p 
+              {
+                    padding: 0.4rem;
+              }
+
+              .project-title
+               {
+                  margin-bottom: 20px;
+              }
+
+             .project-details
+              {
+                   margin-bottom: var(--bottom-margin);
+              }
+
+            .project-card 
+            {
+                 background-color: #fff;
+                 border-radius: 11px;
+                 box-shadow: 0 3px 10px #a30cd1;
+                 padding: 20px;
+                 margin: 10px;
+            }
+
+            .projects-container :hover
+            {
+                background-color: #f345c7;
+                transform: translateY(-20px);
+            }
+            .home
+            {
+                border-color: purple;
+                border-width: 6px;
+                color: black;
+                font-size: 20px;
+                padding: 20px 50px;
+                border-radius: 12px;
+                transition-duration: 0.4s;
+  
+            }
+
+            .home:hover
+            {
+                 background-color:#f8077f;
+                 color: aliceblue;  
+            }
+        </style>
+    </head>
+    <body>
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <div class="projects-container">
+              <div class="project-container project-card">
+                <img
+                  src="img/SW.png"
+                  alt="Stop watch web application"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Stop-Watch Web Application</h3>
+                <p class="project-details">
+                    Designed with simplicity and functionality in mind,
+                     this stopwatch allows users to accurately track
+                     time with just a click of a button.
+                     Whether you need to time a workout, track meeting 
+                     durations, or simply keep track of elapsed time, 
+                     this handy tool has got you covered.
+                     Check it out in my portfolio now!"
+                </p>
+                <a href="https://github.com/Monisha241/PRODIGY_WD_02" target="_blank" class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="img/TIC.png"
+                  alt="Tic-Tac-Toe"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Tic-Tac-Toe Web Application</h3>
+                <p class="project-details">
+                    Enjoy classic gameplay with a modern twist, 
+                    featuring intuitive controls and responsive design
+                    for seamless play on any device.
+                    Perfect for sharpening your strategic skills or 
+                    simply enjoying a quick game with friends.
+                    Ready to challenge yourself to a match
+                </p>
+                <a href="https://github.com/Monisha241/PRODIGY_WD_03" target="_blank" class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <img
+                  src="img/sd.jpg"
+                  alt="Smart diary farm"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="project-title">Smart Diary Farm - Upcomming project</h3>
+                <p class="project-details">
+                    DFSMS is a web-based application which manages the products of dairy shop.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+              </div>
+            </div>
+          </section>
+          <form action="home.html">
+            <button  type="submit"  value="home" class="home" >HOME</button>
+        </form>
+    </body>
+</html>

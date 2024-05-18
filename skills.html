@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Skills</title>
+        <style>
+            body
+            {
+                background:  linear-gradient(to bottom, #f082e1 0%, #e6a05f 100%);
+            }
+
+            .sec
+            {
+                max-width: 68.75rem;
+                margin: auto;
+                text-align: center;
+                 margin-top: 2.5rem;
+            }
+
+            .sec-head
+            {
+                margin-bottom: 1rem;
+                font-size: 40px;
+            }
+
+            .skill
+            {
+                padding: 1.25rem;
+            }
+
+            .imgg
+            {
+                width: 11.875rem;
+                height: 11.25rem;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            #certificate{
+    padding: 30px 0;
+}
+
+.certificate-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.certificate-list div{
+    background: hsl(0, 12%, 89%);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: bacground 0.5s,transform 0.5s;
+}
+
+.certificate-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.certificate-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15;
+}
+
+.certificate-list div a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    margin-top:20px ;
+    display: inline-block;
+}
+
+.certificate-list div:hover{
+    background: #0abdf3;
+    transform: translateY(-10px);
+
+}
+
+p{
+    font-size: large;
+}
+
+.cer
+{
+  border-color: purple;
+  border-width: 6px;
+  color: black;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  
+}
+
+.cer:hover
+{
+  background-color:#f8077f;
+   color: aliceblue;  
+}
+            .home
+            {
+                border-color: purple;
+                border-width: 6px;
+                color: black;
+                font-size: 20px;
+                padding: 20px 50px;
+                border-radius: 12px;
+                transition-duration: 0.4s;
+  
+            }
+
+            .home:hover
+            {
+                 background-color:#f8077f;
+                 color: aliceblue;  
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: brown;">SKILLS :</h1><br><br>
+        <section class="sec">
+            <h2 class="sec-head">My Top Skills</h2><br><br>
+            <div class="skill">
+                <div class="first">
+                    <img src="img/html.png" class="imgg"/>
+                    <img src="img/css.png" class="imgg"/>
+                    <img src="img/js.png" class="imgg"/>
+                </div>
+                <div class="second">
+                    <img src="img/java.png" class="imgg"/>
+                    <img src="img/Python.jpeg" class="imgg"/>
+                    <img src="img/sql.png" class="imgg"/>
+                </div>
+            </div><br>
+
+            <form action="#certificate">
+                <button type="submit" class="cer">See more</button>
+            </form>
+           
+            <div id="certificate">
+                <div class="container">
+                    <h1 style="font-size: 40px;">My Certificates</h1>
+                    <div class="certificate-list">
+                        <div>
+                            <i class="fa-brands fa-android"></i>
+                            <h2>Android Development</h2>
+                            <p>This is a certificate on completing a course in Android App Development
+                                where i tried to develop few android applications and had hands-on-experience.</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-computer"></i>
+                            <h2>Devops</h2>
+                            <p>This is a certificate on completing a course in Developement and operation 
+                                where i hand hands on experience in developing and testing web applications 
+                                using various tools like jenkins and jira.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-network-wired"></i>i
+                            <h2>CCNA</h2>
+                            <p>This is a certificate on completing a course in Computer Communication and Network Application
+                                where i gained knowledge about the networks and communication servies.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-robot"></i>
+                            <h2>IOT</h2>
+                            <p>This is a certificate on completing a course in Internet of Things where i learnt 
+                                about many sensors used for senoring and worked in Ardunio IDE to program those sensors.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-laptop"></i>
+                            <h2>Software Testing</h2>
+                            <p>This is a certificate on completing a course in how to test the software 
+                                this is one of the part in SDLC life cycle where the developers develop the applicationsand test it befor 
+                                it is getting deployed and i learnt various testing like manual and automatic in this course.
+                            </p>
+                        </div>
+            
+            
+                    </div>
+                </div>
+               </div>
+        </section> 
+        <form action="home.html" >
+            <button  type="submit"  value="home" class="home" >HOME</button>
+        </form> 
+    </body>
+</html>
